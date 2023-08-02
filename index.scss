@@ -1,0 +1,38 @@
+@use "./styles/calculator.scss";
+@use "./styles/hero.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;600;700;800&family=Inter:wght@400;600&display=swap");
+
+:root {
+  --color-blue: rgb(52, 95, 246);
+  --color-gunmetal: #253347;
+  --color-grey-blue: #5e6e85;
+  --color-border: #d8e2e7;
+  --color-white: white;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+:after,
+:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  font-family: "Inter", sans-serif;
+}
