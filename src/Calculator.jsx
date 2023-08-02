@@ -26,7 +26,6 @@ const Calculator = () => {
 
       const maxst = Math.round((maxWeight * 2.20462) / 14);
       const maxlb = Math.round((maxWeight * 2.20462) % 14);
-      console.log(maxst, maxlb);
       return [`${st}st ${lb}lb`, `${maxst}st ${maxlb}lb`];
     }
   }
@@ -40,7 +39,6 @@ const Calculator = () => {
   }, [height, weight]);
 
   useEffect(() => {
-    console.log("feedback");
     const [minWeight, maxWeight] = calcIdealWeight(bmi, height);
     if (bmi < 16) {
       setFeedback(

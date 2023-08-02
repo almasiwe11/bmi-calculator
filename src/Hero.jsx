@@ -4,9 +4,9 @@ import Greetings from "./Greetings";
 import Calculator from "./Calculator";
 const Hero = () => {
   return (
-    <div className="hero container">
+    <div className="hero ">
       <Logo />
-      <div className="hero__flex">
+      <div className="hero__flex container">
         <Greetings />
         <Calculator />
       </div>

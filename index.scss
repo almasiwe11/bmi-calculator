@@ -1,5 +1,8 @@
 @use "./styles/calculator.scss";
 @use "./styles/hero.scss";
+@use "./styles/whatMeans.scss";
+@use "./styles/improve.scss";
+@use "./styles/limitations.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;600;700;800&family=Inter:wght@400;600&display=swap");
 
@@ -35,4 +38,8 @@ body {
 
 input::placeholder {
   font-family: "Inter", sans-serif;
+}
+
+p {
+  line-height: 1.45;
 }
