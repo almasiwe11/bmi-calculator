@@ -109,10 +109,9 @@ const Calculator = () => {
         ) : (
           <>
             <h3>Welcome!</h3>
-            <p>
+            <span id="enter">
               Enter your height and weight and you'll see your BMI result here{" "}
-              {bmi}
-            </p>
+            </span>
           </>
         )}
       </div>

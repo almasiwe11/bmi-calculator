@@ -33,7 +33,7 @@
 .display h3 {
   font-size: 1.2rem;
 }
-.display p {
+.display span {
   font-size: 0.9rem;
   margin-top: 0.4rem;
 }
@@ -263,6 +263,11 @@ label {
   .hero__flex > * {
     flex: 1;
   }
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
   .logo-container {
     margin-top: 3rem;
     position: absolute;
@@ -275,7 +280,7 @@ label {
     gap: 1.8rem;
   }
   .calculator h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .logo-container svg {
     transform: scale(100%);
@@ -337,7 +342,7 @@ input:-moz-placeholder {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-top: 8rem;
+  margin-top: 3rem;
 }
 .whatMeans p {
   color: var(--color-grey-blue);
@@ -402,7 +407,7 @@ img {
 
 .improve {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
   margin: 4rem auto;
   width: 90%;
@@ -436,11 +441,6 @@ img {
   gap: 1rem;
   margin: 6rem auto;
   width: 90%;
-}
-.limitations > * {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
 }
 .limitations__text {
   display: flex;
@@ -476,6 +476,52 @@ img {
     gap: 1.1rem;
     text-align: center;
     margin-bottom: 2rem;
+  }
+  .limitations :nth-child(6) {
+    margin: auto;
+    width: 49%;
+    grid-column: 1/-1;
+  }
+}
+@media (min-width: 1024px) {
+  .limitations {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+    margin-top: 12rem;
+  }
+  .limitations > * {
+    display: flex;
+  }
+  .limitations__text {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    text-align: start;
+    max-width: 55ch;
+    margin-bottom: 2rem;
+  }
+  .limitations__text h2 {
+    font-size: 2.5rem;
+  }
+  .limitations .flex-1 {
+    gap: 20%;
+  }
+  .limitations .flex-2 {
+    justify-content: end;
+    gap: 2rem;
+  }
+  .limitations .flex-3 {
+    justify-content: center;
+    position: relative;
+    right: -4%;
+    gap: 2rem;
+  }
+  .limit {
+    max-width: 22rem;
+    padding: 1.5rem;
   }
 }
 :root {
@@ -514,6 +560,7 @@ input::placeholder {
 
 p {
   line-height: 1.45;
+  color: var(--color-grey-blue);
 }
 
 /*# sourceMappingURL=index.css.map */

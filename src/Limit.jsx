@@ -5,9 +5,9 @@ const Limit = ({ icon: Icon, title, children }) => {
     <div className="limit">
       <div className="limit-title">
         <Icon />
-        {title}
+        <h3>{title} </h3>
       </div>
-      {children}
+      <p> {children}</p>
     </div>
   );
 };
